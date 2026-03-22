@@ -53,23 +53,6 @@ emailjs.init("EDYcpL_YYCEt87fnl");
 <input type="number" id="fontSize" value="24">
 <input type="number" id="lineSpacing" value="32">
   
-  <div class="controls">
-
-<select id="pageType">
-  <option value="lined">Lined</option>
-  <option value="plain">Plain</option>
-</select>
-
-<select id="fontType">
-  <option value="Kalam">✍ Real Handwriting (Best)</option>
-  <option value="Noto Sans Devanagari">Hindi Writing</option>
-  <option value="Satisfy">Smooth Pen</option>
-  <option value="Patrick Hand">Handwriting 1</option>
-  <option value="Indie Flower">Handwriting 2</option>
-  <option value="Caveat">Handwriting 3</option>
-  <option value="Shadows Into Light">Handwriting 4</option>
-</select>
-  
 <button onclick="convertText()">Convert</button>
 <button onclick="downloadPDF()">PDF</button>
   
@@ -222,7 +205,23 @@ Your data is completely safe. No information is stored or shared with anyone.
 
 </div>
 </div>
+    <div class="controls">
 
+<select id="pageType">
+  <option value="lined">Lined</option>
+  <option value="plain">Plain</option>
+</select>
+
+<select id="fontType">
+  <option value="Kalam">✍ Real Handwriting (Best)</option>
+  <option value="Noto Sans Devanagari">Hindi Writing</option>
+  <option value="Satisfy">Smooth Pen</option>
+  <option value="Patrick Hand">Handwriting 1</option>
+  <option value="Indie Flower">Handwriting 2</option>
+  <option value="Caveat">Handwriting 3</option>
+  <option value="Shadows Into Light">Handwriting 4</option>
+</select>
+    </div>
 <!-- LIBRARIES -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>

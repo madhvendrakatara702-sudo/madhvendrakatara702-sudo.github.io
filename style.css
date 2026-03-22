@@ -226,6 +226,7 @@ transition:0.3s;
   z-index:1001;
 }
 
+
 .fab:hover{
 transform:scale(1.1);
 }
@@ -565,3 +566,5 @@ nav button {
     padding: 80px 10px 140px;
   }
 }
+
+

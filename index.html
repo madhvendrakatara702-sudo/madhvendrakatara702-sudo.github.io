@@ -47,7 +47,15 @@ emailjs.init("EDYcpL_YYCEt87fnl");
 <textarea id="inputText" placeholder="Type your text..."></textarea>
 
 <div id="pages"></div>
+  
+  <select id="fontType">...</select>
 
+<input type="number" id="fontSize" value="24">
+<input type="number" id="lineSpacing" value="32">
+  
+<button onclick="convertText()">Convert</button>
+<button onclick="downloadPDF()">PDF</button>
+  
 </div>
 
 <!-- ABOUT -->
@@ -115,42 +123,43 @@ If you have any questions, suggestions, or feedback, feel free to contact us usi
 <p>If you have any concerns, feel free to contact us.</p>
 </div>
 <!-- FEATURES PAGE -->
-<div id="features" class="pageSection container" style="display:none;">
+<div id="features" class="pageSection container" style="display:none; overflow-y:auto; height:100vh;">
 
 <h2>Website Features</h2>
 
 <p>
-Handwriting Pro AJ ek powerful tool hai jo normal text ko realistic handwriting me convert karta hai.
+Handwriting Pro AJ is a powerful online tool that converts normal typed text into realistic handwritten content.
+It is designed to help students, teachers, and professionals create neat and presentable handwritten notes easily.
 </p>
 
 <h3>1. Text to Handwriting</h3>
 <p>
-Aap apne typed text ko easily handwritten format me convert kar sakte ho.
+Convert your typed text into natural-looking handwriting with just one click.
 </p>
 
 <h3>2. PDF Download</h3>
 <p>
-Converted handwriting ko PDF me download kar sakte ho.
+Download your handwritten content as a PDF file for assignments, projects, or personal use.
 </p>
 
-<h3>3. Easy to Use</h3>
+<h3>3. Easy to Use Interface</h3>
 <p>
-Simple aur user-friendly interface hai jo sabke liye easy hai.
+The website has a simple and user-friendly interface that anyone can use without technical knowledge.
 </p>
 
-<h3>4. Mobile Friendly</h3>
+<h3>4. Mobile Friendly Design</h3>
 <p>
-Website mobile aur desktop dono me smoothly work karti hai.
+Fully responsive design that works smoothly on both mobile devices and desktops.
 </p>
 
 <h3>5. Fast Processing</h3>
 <p>
-Instant result milta hai bina delay ke.
+Get instant results without any delay. Everything runs quickly in your browser.
 </p>
 
-<h3>6. Secure</h3>
+<h3>6. Secure and Private</h3>
 <p>
-Aapka data safe rehta hai, koi storage nahi hota.
+Your data is completely safe. No information is stored or shared with anyone.
 </p>
 
 </div>
@@ -172,15 +181,7 @@ Aapka data safe rehta hai, koi storage nahi hota.
   <option value="Shadows Into Light">Handwriting 4</option>
 </select>
 
-</select>
-<input type="number" id="fontSize" value="24">
-<input type="number" id="lineSpacing" value="32">
   
-<button onclick="convertText()">Convert</button>
-<button onclick="downloadPDF()">PDF</button>
-
-</div>
-
 <!-- FLOAT BUTTON -->
 <div class="fab" onclick="toggleFabMenu()">+</div>
 

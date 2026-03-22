@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,16 +48,35 @@ emailjs.init("EDYcpL_YYCEt87fnl");
 <textarea id="inputText" placeholder="Type your text..."></textarea>
 
 <div id="pages"></div>
-  
-  <select id="fontType">...</select>
+
+<!-- ✅ CONTROLS (IMPORTANT) -->
+<div class="controls">
+
+<select id="pageType">
+  <option value="lined">Lined</option>
+  <option value="plain">Plain</option>
+</select>
+
+<select id="fontType">
+  <option value="Kalam">✍ Real Handwriting (Best)</option>
+  <option value="Noto Sans Devanagari">Hindi Writing</option>
+  <option value="Satisfy">Smooth Pen</option>
+  <option value="Patrick Hand">Handwriting 1</option>
+  <option value="Indie Flower">Handwriting 2</option>
+  <option value="Caveat">Handwriting 3</option>
+  <option value="Shadows Into Light">Handwriting 4</option>
+</select>
 
 <input type="number" id="fontSize" value="24">
 <input type="number" id="lineSpacing" value="32">
-  
+
 <button onclick="convertText()">Convert</button>
 <button onclick="downloadPDF()">PDF</button>
-  
+
 </div>
+
+</div>
+
 
 <!-- ABOUT -->
 <div id="about" class="pageSection">
@@ -169,9 +189,9 @@ Your data is completely safe. No information is stored or shared with anyone.
 <div class="fab" onclick="toggleFabMenu()">+</div>
 
 <div id="fabMenu" class="menu">
-<button onclick="document.getElementById('pdfInput').click()">📄 PDF</button>
-<button onclick="document.getElementById('imgInput').click()">🖼 Image</button>
-<button onclick="openResume()">📑 Resume</button>
+  <button onclick="document.getElementById('pdfInput').click()">📄 PDF</button>
+  <button onclick="document.getElementById('imgInput').click()">🖼 Image</button>
+  <button onclick="openResume()">📑 Resume</button>
 </div>
 
 <input type="file" id="pdfInput" hidden>
@@ -205,23 +225,7 @@ Your data is completely safe. No information is stored or shared with anyone.
 
 </div>
 </div>
-    <div class="controls">
 
-<select id="pageType">
-  <option value="lined">Lined</option>
-  <option value="plain">Plain</option>
-</select>
-
-<select id="fontType">
-  <option value="Kalam">✍ Real Handwriting (Best)</option>
-  <option value="Noto Sans Devanagari">Hindi Writing</option>
-  <option value="Satisfy">Smooth Pen</option>
-  <option value="Patrick Hand">Handwriting 1</option>
-  <option value="Indie Flower">Handwriting 2</option>
-  <option value="Caveat">Handwriting 3</option>
-  <option value="Shadows Into Light">Handwriting 4</option>
-</select>
-    </div>
 <!-- LIBRARIES -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -243,9 +247,5 @@ function showPage(pageId) {
   let pages = document.querySelectorAll(".pageSection");
   pages.forEach(p => p.style.display = "none");
 
-  document.getElementById(pageId).style.display = "block";
+  document.getElementById(pageId).style.display = "block"
 }
-</script>
-
-</body>
-</html>
